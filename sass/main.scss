@@ -1,0 +1,21 @@
+//*Abstracts*//
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+
+//*Bases*//
+@import './base/reset';
+@import './base/base';
+
+//*Layout *//
+
+@import './layout/header';
+@import './layout/footer';
+@import './layout/maintexto';
+@import './layout/section';
+
+//*componentes*//
+
+@import './components/render';
+@import './components/gridpro';
+@import './components/contact';

@@ -1,0 +1,72 @@
+.titulo-render{
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    align-items: center; 
+    margin-top: 96px; 
+    &:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+    .lineas-titulo{
+        flex-grow: 1; 
+        display: block; 
+        border-top: 1px 
+        solid black;
+    }
+    .titulo-render-texto{
+        flex-grow: 0; 
+        display: 
+        block; 
+        margin: 0 16px; 
+        padding: 10px 16px; 
+        border-radius: 4px; 
+        line-height: 1; 
+        font-weight: 500; 
+        background-color: #121111; 
+        color: white;   
+    }
+    .lineas-titulo-2{
+        flex-grow: 1; 
+        display: block; 
+        border-top: 1px 
+        solid black;
+        
+    }
+}
+
+.section__concepto_img{
+    display: flex;
+    max-width: 1300px;
+    height: 540px;
+    margin: auto;
+    padding-top: 20px;
+
+    
+    img{
+        width:0px;
+        flex-grow: 1;
+        object-fit: cover;
+        align-items: center;
+        opacity: .8;
+        transition: .2s ease;
+        &:hover{
+            cursor: crosshair;
+            width: 50%;
+            height: auto;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+
+        @include telefono{
+            &:hover{
+                cursor: crosshair;
+                width: 10%;
+                height: auto;
+                opacity: 1;
+                filter: contrast(120%);
+        }
+    }
+}
+}
+

@@ -1,0 +1,16 @@
+.section-portada{
+    max-width: 100%;
+    
+    .img-portada{
+        width: 50rem;
+        height: 30rem;
+
+        @include telefono{
+            object-fit: cover;
+            height: 60rem;
+            width: 100%;
+
+        }
+    }
+
+}
