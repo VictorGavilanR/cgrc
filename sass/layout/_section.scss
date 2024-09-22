@@ -1,16 +1,16 @@
-.section-portada{
+.section-portada {
     max-width: 100%;
-    
-    .img-portada{
-        width: 50rem;
-        height: 30rem;
+    display: flex; /* Asegura que la imagen se centre */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
 
-        @include telefono{
-            object-fit: cover;
-            height: 60rem;
-            width: 100%;
+.img-portada {
+    width: 100%; /* Ajusta al 100% del contenedor */
 
-        }
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+
+    @include telefono {
+        height: 60rem; /* Cambia la altura en pantallas más pequeñas */
     }
-
 }

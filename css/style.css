@@ -40,7 +40,7 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   opacity: 0;
-  animation: slideTop 1s ease forwards;
+  animation: slideBottom 1s ease forwards;
   animation-delay: 0.2s; }
   .header-img:hover {
     transform: scale(1.05);
@@ -62,7 +62,7 @@ body {
   font-weight: 300;
   font-size: 1.7rem;
   opacity: 0;
-  animation: slideTop 1s ease forwards;
+  animation: slideBottom 1s ease forwards;
   animation-delay: 0.4s; }
   .nav-links a {
     text-decoration: none; }
@@ -265,15 +265,23 @@ p {
   font-weight: 300; }
 
 .section-portada {
-  max-width: 100%; }
-  .section-portada .img-portada {
-    width: 50rem;
-    height: 30rem; }
-    @media (min-width: 488px) {
-      .section-portada .img-portada {
-        object-fit: cover;
-        height: 60rem;
-        width: 100%; } }
+  max-width: 100%;
+  display: flex;
+  /* Asegura que la imagen se centre */
+  justify-content: center;
+  /* Centra la imagen horizontalmente */
+  align-items: center;
+  /* Centra la imagen verticalmente */ }
+
+.img-portada {
+  width: 100%;
+  /* Ajusta al 100% del contenedor */
+  object-fit: cover;
+  /* Ajusta la imagen sin distorsionarla */ }
+  @media (min-width: 488px) {
+    .img-portada {
+      height: 60rem;
+      /* Cambia la altura en pantallas más pequeñas */ } }
 
 /* Clase para deshabilitar el scroll */
 .no-scroll {

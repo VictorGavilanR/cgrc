@@ -20,7 +20,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     opacity: 0;
-    animation: slideTop 1s ease forwards;
+    animation: slideBottom 1s ease forwards;
     animation-delay: 0.2s;
 
 
@@ -48,7 +48,7 @@
         font-weight: 300;
         font-size: 1.7rem;
         opacity: 0;
-        animation: slideTop 1s ease forwards;
+        animation: slideBottom 1s ease forwards;
         animation-delay: 0.4s;
 
         a{
