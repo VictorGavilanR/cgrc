@@ -8,6 +8,7 @@
     margin: auto;
 
 
+
     @include telefono{
         width: 100%;
         max-width: 75%;
@@ -147,6 +148,25 @@
 
 
     }
+
+    .box-img {
+        width: 100%;
+        height: 100%;
+      
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          opacity: 0;  // Oculto al principio
+          transform: translateY(20px);  // Desplazamiento inicial hacia abajo
+          transition: opacity 0.8s ease, transform 0.8s ease;  // Transición suave
+        }
+      
+        &:hover img {
+          filter: brightness(110%);
+          transform: scale(1.05);  // Efecto de zoom suave al hover
+        }
+      }
 }
 
 

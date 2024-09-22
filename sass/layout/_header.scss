@@ -13,8 +13,15 @@
 
 }
 
+
+
 .header-img{
     width: 20rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0.2s;
 
 
     &:hover{
@@ -27,7 +34,6 @@
         height: auto;
         cursor: pointer;
         display: flex;
-        padding-left: 3rem;
         object-fit: cover;
     }
 }
@@ -41,6 +47,15 @@
         padding: 0;
         font-weight: 300;
         font-size: 1.7rem;
+        opacity: 0;
+        animation: slideTop 1s ease forwards;
+        animation-delay: 0.4s;
+
+        a{
+            text-decoration: none;
+
+        }
+
         @include telefono{
             flex-direction: row;
             font-size: 1.2rem;
@@ -64,3 +79,147 @@
 
 
 
+/* Estilos para el menú hamburguesa */
+
+/* Estilos para el menú hamburguesa */
+
+.hamburger, .close {
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 100;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: transparent;
+    color: transparent;
+}
+
+.hamburger {
+    display: none; /* Muestra el ícono de menú hamburguesa por defecto */
+}
+.bx-menu, .bx-x{
+    background-color: transparent;
+}
+.close {
+    display: none; /* Oculta el ícono de cerrar por defecto */
+    
+}
+
+/* Estilos cuando el menú está activo */
+.nav-links.active ~ .hamburger {
+    display: none; /* Oculta el ícono de menú cuando el menú está activo */
+    
+}
+
+.nav-links.active ~ .close {
+    display: block; /* Muestra el ícono de cerrar cuando el menú está activo */
+
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 70%;
+        background: rgba(253, 251, 251, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.5s;
+        z-index: 99;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        margin: 15px 0;
+        font-size: 25px;
+        opacity: 1;
+        animation: none;
+    }
+
+    .hamburger {
+        display: block; /* Muestra la hamburguesa en pantallas pequeñas */
+
+        
+    }
+
+    .close {
+        display: none; /* La "X" solo aparece cuando se activa */
+    }
+}
+
+
+
+
+@keyframes  slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes  slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes  slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes  slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes  slideSci {
+    0%{
+        transform: translateX(100px) rotate(45deg);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0) rotate(45deg);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomOut{
+    0% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta name="description" content="Author: Victor Gavilan">
 
 
-
-    <title>CGRC Arquitectos</title>
+    <title>CGRC|Arquitectos</title>
     <link rel="icon" href="imagenes/image.png" type="image/x-icon " class="icon">
 
 </head>
 <body>
     <header class="header">
-        <a href="index.html">
-            <img src="imagenes/LOGO CGRC.png" class="header-img" alt="navbar-Logo">
-        </a>
+        <div class="logo">
+            <a href="index.html">
+                <img src="imagenes/LOGO CGRC.png" class="header-img" alt="navbar-Logo">
+            </a>
+        </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html"> INICIO </a></li>
-                <li><a href="renders.html"> RENDERS </a></li>
-                <li><a href="proyectos.html"> PROYECTOS</a></li>
-                <li><a href="contacto.html"> CONTACTO </a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="renders.html">RENDERS</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
-        </nav>
+            <div class="hamburger">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="close hidden">
+                <i class='bx bx-x'></i>
+            </div>
     </header>
 
     <h2 class="titulo-render">
@@ -35,9 +42,9 @@
         <span class="titulo-render-texto">Render Casa</span>
         <span class="lineas-titulo-2"></span>
     </h2>
-        <section class="section__concepto_img">
+        <section class="section__concepto_img animate-left">
             <img 
-            src="imagenes/Cocina  Tipología I .webp"
+            src="imagenes/Cocina  Tipología I .webp" loading="lazy""
             srcset="imagenes/Cocina  Tipología I .webp 480w,"
             srcset="imagenes/Cocina  Tipología I .webp 800w,"
             srcset="imagenes/Cocina  Tipología I .webp 1200w,"
@@ -45,11 +52,11 @@
             (max-width: 900px) 800px, 
             1200px" 
             
-            alt="imagen casa 1">
-            <img src="imagenes/Cocina - Living - Terraza  Tipología I.webp" alt="imagen casa 2">
-            <img src="imagenes/Dormitorio principal  tipología D.webp" alt="imagen casa 3"
-            <img src="imagenes/Cocina  Tipología F.webp" alt="imagen casa 4">
-            <img src="imagenes/Living comedor  Tipología D.webp" alt="imagen casa 5">
+            alt="imagen casa 1" class="modal-img">
+            <img src="imagenes/Cocina - Living - Terraza  Tipología I.webp" alt="imagen casa 2" loading="lazy" class="modal-img">
+            <img src="imagenes/Dormitorio principal  tipología D.webp" alt="imagen casa 3" loading="lazy" class="modal-img">
+            <img src="imagenes/Cocina  Tipología F.webp" alt="imagen casa 4" loading="lazy" class="modal-img">
+            <img src="imagenes/Living comedor  Tipología D.webp" alt="imagen casa 5" loading="lazy" class="modal-img">
         </section>
 
 <h2 class="titulo-render">
@@ -57,11 +64,11 @@
     <span class="titulo-render-texto">Render dormitorio</span>
     <span class="lineas-titulo-2"></span>
 </h2>
-    <section class="section__concepto_img">
-        <img src="imagenes/section1-1.webp" alt="imagen render dormitorio 1">
-        <img src="imagenes/section1-2.webp" alt="imagen render dormitorio 2">
-        <img src="imagenes/section1-3.webp" alt="imagen render dormitorio 3">
-        <img src="imagenes/section1-4.webp" alt="imagen render dormitorio 4">
+    <section class="section__concepto_img right-animate">
+        <img src="imagenes/section1-1.webp" alt="imagen render dormitorio 1" loading="lazy" class="modal-img">
+        <img src="imagenes/section1-2.webp" alt="imagen render dormitorio 2" loading="lazy" class="modal-img">
+        <img src="imagenes/section1-3.webp" alt="imagen render dormitorio 3" loading="lazy" class="modal-img">
+        <img src="imagenes/section1-4.webp" alt="imagen render dormitorio 4" loading="lazy" class="modal-img">
     </section>
 
 <h2 class="titulo-render">
@@ -69,10 +76,10 @@
     <span class="titulo-render-texto">Render baños</span>
     <span class="lineas-titulo-2"></span>
 </h2>
-    <section class="section__concepto_img">
-        <img src="imagenes/section2-1.webp" alt="imagen render baño 1">
-        <img src="imagenes/section2-2.webp" alt="imagen render baño 2">
-        <img src="imagenes/section2-3.webp" alt="imagen render baño 3">
+    <section class="section__concepto_img left-animate">
+        <img src="imagenes/section2-1.webp" alt="imagen render baño 1" loading="lazy" class="modal-img">
+        <img src="imagenes/section2-2.webp" alt="imagen render baño 2" loading="lazy" class="modal-img">
+        <img src="imagenes/section2-3.webp" alt="imagen render baño 3" loading="lazy" class="modal-img">
     </section>
 
 <h2 class="titulo-render">
@@ -80,25 +87,37 @@
     <span class="titulo-render-texto">Render SetUp</span>
     <span class="lineas-titulo-2"></span>
 </h2>
-    <section class="section__concepto_img">
-        <img src="imagenes/section3-1.webp" alt="imagen render setup 1">
-        <img src="imagenes/section3-2.webp" alt="imagen render setup 2">
-        <img src="imagenes/section3-3.webp" alt="imagen render setup 3">
+    <section class="section__concepto_img right-animate">
+        <img src="imagenes/section3-1.webp" alt="imagen render setup 1" loading="lazy" class="modal-img">
+        <img src="imagenes/section3-2.webp" alt="imagen render setup 2" loading="lazy" class="modal-img">
+        <img src="imagenes/section3-3.webp" alt="imagen render setup 3" loading="lazy" class="modal-img">
     </section>
 <h2 class="titulo-render">
     <span class="lineas-titulo"></span>
     <span class="titulo-render-texto">Render Cocina</span>
     <span class="lineas-titulo-2"></span>
 </h2>
-    <section class="section__concepto_img">
-        <img src="imagenes/section4-1.webp" alt="imagen render cocina 1">
-        <img src="imagenes/section 4-2.webp" alt="imagen render cocina 2">
-        <img src="imagenes/section 4-3.webp" alt="imagen render cocina 4">
-        <img src="imagenes/section 4-4.webp" alt="imagen render cocina 5">
-        <img src="imagenes/section 4-5.webp" alt="imagen render cocina 6">
-        <img src="imagenes/section 4-6.webp" alt="imagen render cocina 7">
-        <img src="imagenes/section 4-7.webp" alt="imagen render cocina 8">
+    <section class="section__concepto_img left-animate">
+        <img src="imagenes/section4-1.webp" alt="imagen render cocina 1" loading="lazy" class="modal-img">
+        <img src="imagenes/section 4-2.webp" alt="imagen render cocina 2" loading="lazy" class="modal-img">
+        <img src="imagenes/section 4-3.webp" alt="imagen render cocina 4" loading="lazy" class="modal-img">
+        <img src="imagenes/section 4-4.webp" alt="imagen render cocina 5" loading="lazy" class="modal-img">
+        <img src="imagenes/section 4-5.webp" alt="imagen render cocina 6" loading="lazy" class="modal-img">
+        <img src="imagenes/section 4-6.webp" alt="imagen render cocina 7" loading="lazy" class="modal-img">
+        <img src="imagenes/section 4-7.webp" alt="imagen render cocina 8" loading="lazy" class="modal-img"
+        
+    >
     </section>
+    <!-- Modal para las imágenes -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <i class='bx bx-chevron-left' id="prev"></i>
+            <img class="modal-img" id="imgInModal">
+            <i class='bx bx-chevron-right' id="next"></i>
+        </div>
+        <div id="caption"></div>
+    </div>
 
     <footer class="footer">
         <img src="imagenes/navbar-Logo.jpg" class="footer-img" alt="footer-imagen">
@@ -111,6 +130,7 @@
     </footer>
 
 
+    <script src="script.js"></script>
 
     
 </body>
